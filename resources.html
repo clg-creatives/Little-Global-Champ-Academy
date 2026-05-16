@@ -4,75 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent Resources | Little Global Champ Child Development Academy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #1a2c3e; background: #f8f9fa; }
-        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --white: #ffffff; --gray-100: #f8f9fa; --gray-300: #dee2e6; --gray-600: #6c757d; }
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        body { font-family: 'Inter', sans-serif; background: #f8f9fa; color: #1a2c3e; }
+        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --success: #2A9D8F; --white: #ffffff; --gray-100: #f8f9fa; --gray-200: #e9ecef; --gray-600: #6c757d; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
         .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
         .logo span { color: var(--secondary); }
         .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
-        .section { padding: 60px 0; }
-        .section-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: var(--primary); }
-        .resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn-primary { background: var(--secondary); color: var(--primary-dark); padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; }
         .resource-card { background: var(--white); border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s; }
         .resource-card:hover { transform: translateY(-5px); }
         .resource-icon { font-size: 2.5rem; color: var(--secondary); margin-bottom: 16px; }
-        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 40px 0 20px; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; margin-top: 40px; text-align: center; font-size: 0.85rem; }
         .footer a { color: var(--secondary); text-decoration: none; }
-        .back-home { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; }
-        .btn-outline { display: inline-block; padding: 10px 20px; border: 2px solid var(--secondary); border-radius: 50px; color: var(--secondary); text-decoration: none; margin-top: 16px; transition: all 0.3s; }
-        .btn-outline:hover { background: var(--secondary); color: white; }
+        .newsletter { background: var(--gray-100); border-radius: 20px; padding: 40px; text-align: center; margin: 40px 0; }
+        .newsletter input { padding: 12px 20px; border-radius: 50px; border: 1px solid var(--gray-200); width: 300px; max-width: 100%; margin-right: 10px; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .newsletter input { margin-bottom: 10px; } }
     </style>
 </head>
 <body>
 
+<div style="background: var(--primary-dark); color: white; padding: 8px 0; font-size: 0.8rem; text-align: center;"><div class="container"><i class="fas fa-download"></i> Free Downloads | Guides | Videos</div></div>
+
 <header class="header">
     <div class="nav-container">
-        <a href="/" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="read-me.html">Read Me</a>
+            <a href="enroll.html">Enroll Now</a>
+            <a href="resources.html" style="color: var(--secondary);">Resources</a>
+            <a href="live-dashboard.html">Live Data</a>
+            <a href="payment.html">Pay Online</a>
+        </div>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <div style="padding: 20px 0;">
-            <a href="/" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <div style="padding: 20px 0;"><a href="index.html" style="color: var(--primary); text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Home</a></div>
+        <h1 style="color: var(--primary); margin-bottom: 10px;">Parent Resources</h1>
+        <p style="color: var(--gray-600); margin-bottom: 20px;">Practical guides, videos, and downloads to support your child's development at home.</p>
+
+        <div class="resources-grid">
+            <div class="resource-card"><i class="fas fa-download resource-icon"></i><h3>Safety at Home Guide</h3><p>Practice Turtle Pose, Firefighter Crawl, and Hide & Hush with your child.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Download PDF</a></div>
+            <div class="resource-card"><i class="fas fa-chalkboard-user resource-icon"></i><h3>Toilet Training Guide</h3><p>Our gentle 8-step method for toilet independence.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Download PDF</a></div>
+            <div class="resource-card"><i class="fas fa-smile resource-icon"></i><h3>Positive Discipline Tips</h3><p>How to reinforce GMRC and integrity at home.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Download PDF</a></div>
+            <div class="resource-card"><i class="fas fa-video resource-icon"></i><h3>Turtle Pose Video</h3><p>Watch our 2-minute video demonstration.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Watch Video</a></div>
+            <div class="resource-card"><i class="fas fa-calendar-alt resource-icon"></i><h3>Sample Daily Schedule</h3><p>See what a typical day looks like at the Academy.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Download PDF</a></div>
+            <div class="resource-card"><i class="fas fa-book-open resource-icon"></i><h3>Weekly Integrity Report</h3><p>Template for tracking your child's promises and truth-telling.</p><a href="#" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Download PDF</a></div>
         </div>
-        
-        <section class="section">
-            <h1 class="section-title">Parent Resources</h1>
-            <p style="text-align: center; color: var(--gray-600); margin-bottom: 20px;">Practical guides, videos, and downloads to support your child's development at home.</p>
-            
-            <div class="resources-grid">
-                <div class="resource-card"><i class="fas fa-download resource-icon"></i><h3>Safety at Home Guide</h3><p>Practice Turtle Pose, Firefighter Crawl, and Hide & Hush with your child at home.</p><a href="#" class="btn-outline">Download PDF</a></div>
-                <div class="resource-card"><i class="fas fa-chalkboard-user resource-icon"></i><h3>Toilet Training Guide</h3><p>Our gentle 8-step method for toilet independence.</p><a href="#" class="btn-outline">Download PDF</a></div>
-                <div class="resource-card"><i class="fas fa-smile resource-icon"></i><h3>Positive Discipline Tips</h3><p>How to reinforce GMRC and integrity at home.</p><a href="#" class="btn-outline">Download PDF</a></div>
-                <div class="resource-card"><i class="fas fa-video resource-icon"></i><h3>Turtle Pose Video</h3><p>Watch our 2-minute video demonstration.</p><a href="#" class="btn-outline">Watch Video</a></div>
-                <div class="resource-card"><i class="fas fa-calendar-alt resource-icon"></i><h3>Sample Daily Schedule</h3><p>See what a typical day looks like at the Academy.</p><a href="#" class="btn-outline">Download PDF</a></div>
-                <div class="resource-card"><i class="fas fa-book-open resource-icon"></i><h3>Weekly Integrity Report</h3><p>Template for tracking your child's promises and truth-telling.</p><a href="#" class="btn-outline">Download PDF</a></div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px; background: var(--gray-100); padding: 30px; border-radius: 20px;">
-                <h3>Monthly Parent Newsletter</h3>
-                <p>Subscribe to receive parenting tips, activity ideas, and Academy updates.</p>
-                <div style="display: flex; justify-content: center; gap: 10px; margin-top: 16px; flex-wrap: wrap;">
-                    <input type="email" placeholder="Your email address" style="padding: 12px; border-radius: 50px; border: 1px solid var(--gray-300); width: 300px;">
-                    <button class="btn-outline" style="border: none; background: var(--secondary); color: var(--primary-dark); padding: 12px 24px;">Subscribe</button>
-                </div>
-            </div>
-        </section>
+
+        <div class="newsletter"><h3 style="color: var(--primary);">Monthly Parent Newsletter</h3><p>Subscribe to receive parenting tips, activity ideas, and Academy updates.</p><div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 20px;"><input type="email" placeholder="Your email address" id="newsletterEmail"><button class="btn-primary" onclick="subscribeNewsletter()">Subscribe</button></div></div>
     </div>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p>
-        <p><a href="/">Home</a> | <a href="/read-me.html">Read Me</a> | <a href="mailto:info@childev-cradle.org">Contact Us</a></p>
-    </div>
-</footer>
+<footer class="footer"><div class="container"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p><p><a href="index.html">Home</a> | <a href="read-me.html">Read Me</a> | <a href="resources.html">Resources</a> | <a href="payment.html">Pay Online</a></p></div></footer>
+
+<script>function subscribeNewsletter() { const email = document.getElementById('newsletterEmail').value; if (email) { alert('Thank you for subscribing! Check your inbox for updates.'); document.getElementById('newsletterEmail').value = ''; } else { alert('Please enter a valid email address.'); } }</script>
 </body>
 </html>

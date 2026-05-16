@@ -2,760 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Little Global Champ – Inclusive Child Development Academy | SEC Registered Partnership</title>
-    <meta name="description" content="ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. operating as Little Global Champ Child Development Academy. A registered Child Development Center under R.A. 12199, providing 8-pillar holistic education including confidence, integrity, GMRC, safety drills, and inclusive programs for children with special needs. SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review).">
-    <meta name="keywords" content="child development center, daycare, preschool, special needs inclusion, autism, GMRC, safety drills, DMCI, BGC, Taguig, SEC registered, general partnership">
-    <meta name="author" content="ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.">
-    <meta property="og:title" content="Little Global Champ – Where Confidence, Integrity & Safety Grow">
-    <meta property="og:description" content="SEC Registered General Partnership. Inclusive early childhood education for ages 2-5. 8 pillars, special needs support, safety drills. Located in BGC and DMCI estates.">
-    <meta property="og:image" content="https://childev-cradle.org/images/og-image.jpg">
-    <meta property="og:url" content="https://childev-cradle.org">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://childev-cradle.org">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    
-    <!-- Google Fonts + Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Global Champ – Inclusive Child Development Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
     <style>
-        /* ============================================
-           LITTLE GLOBAL CHAMP CHILD DEVELOPMENT ACADEMY
-           MAIN STYLESHEET
-           Version: 2.0 (SEC Submission)
-           Domain: childev-cradle.org
-           Legal: ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.
-           ============================================ */
-        
-        /* CSS Variables */
-        :root {
-            --primary: #2A5C7D;
-            --primary-light: #3f7b9e;
-            --primary-dark: #1a3e55;
-            --secondary: #F4A261;
-            --secondary-light: #f9c49a;
-            --secondary-dark: #e0761e;
-            --accent: #E76F51;
-            --success: #2A9D8F;
-            --info: #5E60CE;
-            --warning: #E9C46A;
-            --danger: #E63946;
-            --gray-50: #fafbfc;
-            --gray-100: #f8f9fa;
-            --gray-200: #e9ecef;
-            --gray-300: #dee2e6;
-            --gray-400: #ced4da;
-            --gray-500: #adb5bd;
-            --gray-600: #6c757d;
-            --gray-700: #495057;
-            --gray-800: #343a40;
-            --gray-900: #212529;
-            --white: #ffffff;
-            --black: #000000;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
-            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
-            --shadow-lg: 0 16px 40px rgba(0,0,0,0.12);
-            --shadow-xl: 0 24px 60px rgba(0,0,0,0.15);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --radius-xl: 30px;
-            --transition-fast: 0.2s ease;
-            --transition-base: 0.3s ease;
-            --transition-slow: 0.5s ease;
-        }
-        
-        /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: var(--gray-800);
-            background-color: var(--white);
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, h4, h5, h6,
-        .logo, .nav-links, .btn, .pillar-title, .testimonial-name {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        
-        /* Typography */
-        h1 { font-size: 3.5rem; }
-        h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
-        h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            h3 { font-size: 1.3rem; }
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-            width: 100%;
-        }
-        
-        /* Section Spacing */
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-sm {
-            padding: 48px 0;
-        }
-        
-        .section-lg {
-            padding: 120px 0;
-        }
-        
-        .section-dark {
-            background-color: var(--gray-100);
-        }
-        
-        .section-primary {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-        
-        .section-secondary {
-            background-color: var(--secondary);
-            color: var(--primary-dark);
-        }
-        
-        /* Section Headers */
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-align: center;
-            color: var(--gray-900);
-        }
-        
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: var(--gray-600);
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 3rem;
-        }
-        
-        .section-dark .section-title,
-        .section-dark .section-subtitle {
-            color: var(--gray-900);
-        }
-        
-        .section-primary .section-title,
-        .section-primary .section-subtitle {
-            color: var(--white);
-        }
-        
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all var(--transition-base);
-            cursor: pointer;
-            border: none;
-            background: transparent;
-        }
-        
-        .btn-primary {
-            background: var(--secondary);
-            color: var(--primary-dark);
-        }
-        
-        .btn-primary:hover {
-            background: var(--secondary-dark);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .btn-primary:active {
-            transform: translateY(0);
-        }
-        
-        .btn-outline {
-            border: 2px solid var(--secondary);
-            color: var(--secondary);
-            background: transparent;
-        }
-        
-        .btn-outline:hover {
-            background: var(--secondary);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-        
-        .btn-white {
-            background: var(--white);
-            color: var(--primary);
-        }
-        
-        .btn-white:hover {
-            background: var(--gray-100);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .btn-secondary {
-            background: var(--primary);
-            color: var(--white);
-        }
-        
-        .btn-secondary:hover {
-            background: var(--primary-light);
-            transform: translateY(-2px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-            position: relative;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23F4A261" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') repeat-x bottom;
-            background-size: cover;
-            opacity: 0.3;
-            pointer-events: none;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: var(--white);
-            max-width: 700px;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-        
-        .hero-badges {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-        
-        .hero-badge {
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(5px);
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-        
-        /* Header/Navigation */
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255,255,255,0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: var(--shadow-sm);
-            z-index: 1000;
-            transition: all var(--transition-base);
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 32px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--primary);
-            text-decoration: none;
-            line-height: 1.2;
-        }
-        
-        .logo span {
-            color: var(--secondary);
-        }
-        
-        .logo small {
-            font-size: 0.65rem;
-            font-weight: normal;
-            color: var(--gray-600);
-            display: block;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-800);
-            font-weight: 500;
-            transition: color var(--transition-fast);
-        }
-        
-        .nav-links a:hover {
-            color: var(--secondary);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: var(--primary);
-        }
-        
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: var(--white);
-                flex-direction: column;
-                padding: 24px;
-                gap: 16px;
-                box-shadow: var(--shadow-md);
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .mobile-menu-btn {
-                display: block;
-            }
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-        }
-        
-        /* Trust Bar */
-        .trust-bar {
-            background: var(--primary-dark);
-            color: var(--white);
-            padding: 8px 0;
-            font-size: 0.8rem;
-            text-align: center;
-        }
-        
-        .trust-bar a {
-            color: var(--secondary);
-            text-decoration: none;
-        }
-        
-        /* Cards */
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
-            margin-top: 48px;
-        }
-        
-        .pillar-card,
-        .testimonial-card,
-        .location-card,
-        .service-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 32px 24px;
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition-base);
-            border: 1px solid var(--gray-200);
-        }
-        
-        .pillar-card:hover,
-        .testimonial-card:hover,
-        .location-card:hover,
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .pillar-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .pillar-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--primary);
-        }
-        
-        /* Stats Section */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--secondary);
-        }
-        
-        /* Testimonials */
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: var(--gray-700);
-        }
-        
-        .testimonial-name {
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        .testimonial-location {
-            font-size: 0.85rem;
-            color: var(--gray-500);
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--white);
-            text-align: center;
-            border-radius: var(--radius-xl);
-            margin: 40px 24px;
-            padding: 60px 40px;
-        }
-        
-        /* Forms */
-        input, textarea, select {
-            width: 100%;
-            padding: 14px 16px;
-            border: 1px solid var(--gray-300);
-            border-radius: var(--radius-md);
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            transition: all var(--transition-fast);
-        }
-        
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.1);
-        }
-        
-        /* Footer */
-        .footer {
-            background: var(--gray-900);
-            color: var(--gray-400);
-            padding: 60px 0 30px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-logo {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-        
-        .footer-logo small {
-            font-size: 0.7rem;
-            font-weight: normal;
-            color: var(--gray-500);
-            display: block;
-        }
-        
-        .footer-links h4 {
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-        
-        .footer-links a {
-            display: block;
-            color: var(--gray-400);
-            text-decoration: none;
-            margin-bottom: 10px;
-            transition: color var(--transition-fast);
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 16px;
-            margin-top: 16px;
-        }
-        
-        .social-links a {
-            color: var(--gray-400);
-            font-size: 1.3rem;
-            transition: color var(--transition-fast);
-        }
-        
-        .social-links a:hover {
-            color: var(--secondary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid var(--gray-800);
-            font-size: 0.85rem;
-        }
-        
-        /* Back to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: var(--secondary);
-            color: var(--primary-dark);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-base);
-            z-index: 99;
-            box-shadow: var(--shadow-md);
-        }
-        
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .back-to-top:hover {
-            transform: translateY(-5px);
-            background: var(--secondary-dark);
-        }
-        
-        /* Chat Widget */
-        .chat-widget {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--primary);
-            color: var(--white);
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: var(--shadow-lg);
-            transition: all var(--transition-base);
-            z-index: 99;
-        }
-        
-        .chat-widget:hover {
-            transform: scale(1.1);
-            background: var(--primary-light);
-        }
-        
-        /* Loader */
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.5s;
-        }
-        
-        .loader.hide {
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid var(--gray-300);
-            border-top-color: var(--secondary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        /* Scroll Reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
-        
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .fade-up { animation: fadeInUp 0.8s ease forwards; }
-        .float { animation: float 3s ease infinite; }
-        
-        /* Legal Disclaimer */
-        .legal-disclaimer {
-            background: var(--gray-100);
-            border-left: 4px solid var(--secondary);
-            padding: 16px 24px;
-            margin: 24px 0;
-            font-size: 0.85rem;
-            color: var(--gray-600);
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 16px;
-            }
-            .section {
-                padding: 48px 0;
-            }
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .cta-section {
-                margin: 20px 16px;
-                padding: 40px 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero-badges {
-                gap: 8px;
-            }
-            .hero-badge {
-                font-size: 0.7rem;
-                padding: 4px 10px;
-            }
-        }
-        
-        /* Print Styles */
-        @media print {
-            .header, .chat-widget, .back-to-top, .footer {
-                display: none;
-            }
-            body {
-                color: black;
-                background: white;
-            }
-            .hero {
-                background: white;
-                color: black;
-            }
-            .section {
-                page-break-inside: avoid;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #1a2c3e; background: #f8f9fa; line-height: 1.5; }
+        :root { --primary: #2A5C7D; --primary-light: #3f7b9e; --primary-dark: #1a3e55; --secondary: #F4A261; --secondary-dark: #e0761e; --success: #2A9D8F; --info: #5E60CE; --accent: #E76F51; --gray-100: #f8f9fa; --gray-200: #e9ecef; --gray-300: #dee2e6; --gray-600: #6c757d; --gray-800: #343a40; --white: #ffffff; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
+        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+        .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s; cursor: pointer; border: none; }
+        .btn-primary { background: var(--secondary); color: var(--primary-dark); }
+        .btn-primary:hover { background: var(--secondary-dark); transform: translateY(-2px); }
+        .btn-outline { border: 2px solid var(--secondary); color: var(--secondary); background: transparent; }
+        .btn-outline:hover { background: var(--secondary); color: white; }
+        .btn-success { background: var(--success); color: white; }
+        .btn-success:hover { background: #21867a; transform: translateY(-2px); }
+        .section { padding: 60px 0; }
+        .section-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: var(--primary); }
+        .section-subtitle { text-align: center; color: var(--gray-600); max-width: 700px; margin: 0 auto 40px; }
+        .trust-bar { background: var(--primary-dark); color: var(--white); padding: 8px 0; font-size: 0.8rem; text-align: center; }
+        .trust-bar a { color: var(--secondary); text-decoration: none; }
+        .hero { text-align: center; padding: 60px 0 40px; }
+        .hero h1 { font-size: 2.8rem; color: var(--primary); margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; color: var(--gray-600); max-width: 700px; margin: 0 auto 20px; }
+        .hero-badge { background: var(--primary); color: white; padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; display: inline-block; margin: 0 4px 10px; }
+        .pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .pillar-card { background: var(--white); border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer; }
+        .pillar-card:hover { transform: translateY(-5px); }
+        .pillar-icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .pillar-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; color: var(--primary); }
+        .pillar-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--gray-600); font-size: 0.9rem; }
+        .pillar-card.active .pillar-content { max-height: 200px; margin-top: 16px; }
+        .legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
+        .legal-card { background: var(--white); border-radius: 20px; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s; }
+        .legal-card:hover { transform: translateY(-3px); }
+        .legal-card h3 { color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .legal-summary { color: var(--gray-600); font-size: 0.9rem; }
+        .legal-full { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--gray-600); font-size: 0.85rem; }
+        .legal-card.active .legal-full { max-height: 300px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--gray-200); }
+        .location-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; }
+        .location-card { background: var(--white); border-radius: 20px; padding: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .location-card h3 { color: var(--primary); margin-bottom: 10px; }
+        .location-card p { color: var(--gray-600); margin-bottom: 15px; }
+        .map-link { color: var(--secondary); text-decoration: none; font-weight: 600; }
+        .safety-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 40px 0; }
+        .safety-card { background: var(--white); border-radius: 20px; padding: 25px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s; }
+        .safety-card:hover { transform: translateY(-3px); }
+        .safety-icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .safety-card h3 { color: var(--primary); margin-bottom: 10px; }
+        .safety-short { color: var(--gray-600); font-size: 0.9rem; }
+        .safety-full { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--gray-600); font-size: 0.85rem; text-align: left; }
+        .safety-card.active .safety-full { max-height: 200px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--gray-200); }
+        .condition-buttons, .service-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+        .condition-btn, .service-btn { background: var(--gray-200); border: none; padding: 10px 20px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; transition: all 0.3s; }
+        .condition-btn:hover, .service-btn:hover { background: var(--secondary); color: white; }
+        .condition-btn.active, .service-btn.active { background: var(--primary); color: white; }
+        .condition-content, .service-content { background: var(--white); border-radius: 16px; padding: 20px; display: none; margin-bottom: 20px; }
+        .condition-content.active, .service-content.active { display: block; }
+        .cta-section { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; text-align: center; border-radius: 30px; padding: 50px; margin: 40px 0; }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 40px 0 20px; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer a { color: var(--secondary); text-decoration: none; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; text-align: left; }
+        .footer-links h4 { color: white; margin-bottom: 15px; }
+        .footer-links a { display: block; color: var(--gray-400); text-decoration: none; margin-bottom: 8px; }
+        .footer-links a:hover { color: var(--secondary); }
+        .copyright { border-top: 1px solid var(--gray-700); padding-top: 20px; text-align: center; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .hero h1 { font-size: 1.8rem; } .section-title { font-size: 1.6rem; } }
     </style>
 </head>
 <body>
 
-<!-- Loader -->
-<div class="loader" id="loader">
-    <div class="spinner"></div>
-</div>
-
-<!-- Trust Bar -->
 <div class="trust-bar">
     <div class="container">
         <i class="fas fa-check-circle"></i> SEC Registered Partnership No. SEC260516-TR5ARDEFZWCHELE (Under Review) | 
@@ -764,497 +89,110 @@
     </div>
 </div>
 
-<!-- Header -->
-<header class="header" id="header">
+<header class="header">
     <div class="nav-container">
-        <a href="/" class="logo">
-            ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br>
-            <span>Little Global Champ</span>
-            <small>Child Development Academy | A Registered CDC as per R.A. 12199</small>
-        </a>
-        <div class="mobile-menu-btn" id="mobileMenuBtn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#pillars">8 Pillars</a>
-            <a href="#inclusive">Inclusive</a>
-            <a href="#safety">Safety</a>
-            <a href="#locations">Locations</a>
-            <a href="#get-involved">Get Involved</a>
-            <a href="#contact">Contact</a>
-            <a href="/enroll" class="btn btn-primary" style="padding: 8px 20px;">Enroll Now</a>
+        <a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="read-me.html">Read Me</a>
+            <a href="enroll.html">Enroll Now</a>
+            <a href="live-dashboard.html"><i class="fas fa-chart-line"></i> Live Data</a>
+            <a href="payment.html" style="color: var(--success);"><i class="fas fa-credit-card"></i> Pay Online</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="enroll.html" class="btn btn-primary" style="padding: 8px 20px;">Enroll</a>
         </div>
     </div>
 </header>
 
 <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content fade-up">
-                <div class="hero-badges">
-                    <span class="hero-badge">🏛️ SEC Reg. Partnership</span>
-                    <span class="hero-badge">📜 R.A. 12199 Compliant</span>
-                    <span class="hero-badge">⚖️ R.A. 11650 Inclusive</span>
-                    <span class="hero-badge">🌟 DMCI Partner Center</span>
-                    <span class="hero-badge">🤝 General Partnership</span>
-                </div>
-                <h1>Where Confidence, Integrity & Safety Grow</h1>
-                <p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO., operating as Little Global Champ Child Development Academy, is a SEC-registered General Partnership and Child Development Center providing 8-pillar holistic education including inclusive programs for children with special needs.</p>
-                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="/enroll" class="btn btn-primary"><i class="fas fa-star"></i> Enroll Your Child</a>
-                    <a href="#about" class="btn btn-outline"><i class="fas fa-play-circle"></i> Learn About Us</a>
-                </div>
-                <div style="margin-top: 40px;">
-                    <a href="#pillars" style="color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-                        Explore Our 8 Pillars <i class="fas fa-arrow-down"></i>
-                    </a>
-                </div>
-            </div>
+    <div class="container">
+        <div class="hero">
+            <div><span class="hero-badge">🏛️ SEC Reg. Partnership</span> <span class="hero-badge">📜 R.A. 12199 Compliant</span> <span class="hero-badge">⚖️ R.A. 11650 Inclusive</span></div>
+            <h1>Where Confidence, Integrity & Safety Grow</h1>
+            <p>SEC-registered General Partnership. 8-pillar holistic education. Inclusive programs for children with special needs.</p>
+            <div><a href="enroll.html" class="btn btn-primary"><i class="fas fa-star"></i> Enroll Your Child</a> <a href="workshop.html" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Free Workshop</a></div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Our Story</h2>
-                <div class="section-subtitle">From a Sunday school teacher to a SEC-registered General Partnership serving children with special needs</div>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                <div class="reveal">
-                    <h3 style="color: var(--primary); margin-bottom: 20px;">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</h3>
-                    <p style="margin-bottom: 20px;">Little Global Champ Child Development Academy is operated by <strong>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</strong>, a General Partnership registered with the Securities and Exchange Commission (SEC) under Registration No. <strong>SEC260516-TR5ARDEFZWCHELE</strong> (currently under review).</p>
-                    <p style="margin-bottom: 20px;">The Academy was founded by <strong>Teacher Clarice (Marjorie LuzCel Arenas Bautista)</strong>, a passionate educator who saw the gap: preschools teach ABCs, but no one teaches <strong>confidence, integrity, good manners, and safety drills</strong> – explicitly. With a background in online English teaching and Sunday school values formation, Teacher Clarice built a center that nurtures the whole child.</p>
-                    <p style="margin-bottom: 20px;">The Partnership is expressly authorized under its Articles of Partnership to <strong>receive and solicit sponsorships, donations, grants, and endowments</strong> – both local and foreign – to support its premium inclusive education services for children with special needs.</p>
-                    <p>We are fully compliant with <strong>Republic Act No. 12199 (ECCD System Act of 2025)</strong> and <strong>Republic Act No. 11650 (Inclusive Education Act)</strong>.</p>
-                    <div class="legal-disclaimer" style="margin-top: 24px;">
-                        <i class="fas fa-gavel"></i> <strong>Legal Status:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. is a General Partnership. Each Partner is a General Partner and may be personally liable for partnership debts as provided by law. The Partnership has posted a surety bond of ₱1,000,000.00 as required by SEC Memorandum Circular No. 7, Series of 2019.
-                    </div>
-                </div>
-                <div class="reveal" style="background: linear-gradient(135deg, var(--primary-light), var(--primary)); border-radius: 30px; padding: 40px; color: white; text-align: center;">
-                    <i class="fas fa-chalkboard-user" style="font-size: 4rem; margin-bottom: 20px;"></i>
-                    <h3>Teacher Clarice</h3>
-                    <p><strong>Marjorie LuzCel Arenas Bautista</strong><br>Managing Partner / Treasurer</p>
-                    <p style="margin-top: 20px; font-size: 0.9rem;">"Every child deserves to feel confident, tell the truth, keep promises, and know how to stay safe. That is why Little Global Champ exists. As a General Partnership, we are committed to transparency, accountability, and service to our community."</p>
-                    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
-                        <span class="hero-badge" style="background: rgba(255,255,255,0.2);">Online English Teacher</span>
-                        <span class="hero-badge" style="background: rgba(255,255,255,0.2);">Sunday School Teacher</span>
-                        <span class="hero-badge" style="background: rgba(255,255,255,0.2);">ECCD Specialist</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Vision Values -->
-    <section class="section section-dark">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Our Compass</h2>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px;">
-                <div class="reveal" style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                    <i class="fas fa-bullseye" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 16px;"></i>
-                    <h3 style="margin-bottom: 16px;">Mission</h3>
-                    <p>To nurture confident, honest, and safe children through our 8-pillar curriculum, with specialized support for children with special needs, delivered in accessible locations within DMCI estates and clustered communities, operating as a transparent and accountable General Partnership.</p>
-                </div>
-                <div class="reveal" style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                    <i class="fas fa-eye" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 16px;"></i>
-                    <h3 style="margin-bottom: 16px;">Vision</h3>
-                    <p>A Philippines where every child aged 2-5, regardless of ability, has access to quality early childhood education that builds character, confidence, and safety awareness, supported by a sustainable partnership model.</p>
-                </div>
-                <div class="reveal" style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 16px;"></i>
-                    <h3 style="margin-bottom: 16px;">Core Values (I.C.E.S.)</h3>
-                    <p><strong>I</strong>nclusion – Every child belongs, with reasonable accommodations<br>
-                    <strong>C</strong>onfidence – Built through achievable challenges<br>
-                    <strong>E</strong>mpowerment – Children keep themselves safe<br>
-                    <strong>S</strong>ervice – Partnership committed to community</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="section">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Our General Partners</h2>
-                <div class="section-subtitle">The individuals behind ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
-                <div class="reveal" style="text-align: center; padding: 30px; background: var(--gray-100); border-radius: 20px;">
-                    <div style="background: var(--primary); width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                        <i class="fas fa-user-graduate" style="font-size: 3rem; color: white;"></i>
-                    </div>
-                    <h3>Marjorie LuzCel Arenas Bautista</h3>
-                    <p><strong>General Partner / Managing Partner / Treasurer</strong></p>
-                    <p>TIN: 236-234-744-000</p>
-                    <p style="margin-top: 16px; font-size: 0.9rem;">Also known as "Teacher Clarice." Responsible for day-to-day operations, curriculum development, and donor relations.</p>
-                </div>
-                <div class="reveal" style="text-align: center; padding: 30px; background: var(--gray-100); border-radius: 20px;">
-                    <div style="background: var(--secondary); width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                        <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--primary-dark);"></i>
-                    </div>
-                    <h3>Clarence Mercillo Morales</h3>
-                    <p><strong>General Partner / President</strong></p>
-                    <p>TIN: 214-660-768-000</p>
-                    <p style="margin-top: 16px; font-size: 0.9rem;">Responsible for strategic planning, financial oversight, and expansion initiatives.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8 Pillars -->
-    <section class="section section-dark" id="pillars">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Our 8 Pillars of Holistic Development</h2>
-                <div class="section-subtitle">What makes Little Global Champ different? We teach what other preschools don't.</div>
-            </div>
+        <section><h2 class="section-title">Our 8 Pillars of Holistic Development</h2>
             <div class="pillars-grid">
-                <div class="pillar-card reveal"><div class="pillar-icon">📖</div><h3 class="pillar-title">English & Literacy</h3><p>Letter sounds, vocabulary, conversation, and pre-writing skills through songs and stories.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">🙏</div><h3 class="pillar-title">GMRC (Good Manners)</h3><p>"Po," "opo," please, thank you, excuse me, mano po, sharing, and gentle hands.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">🌍</div><h3 class="pillar-title">Cultural Exposure</h3><p>Philippine festivals (Sinulog, Ati-Atihan) and global celebrations (Lunar New Year, Diwali).</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">🧼</div><h3 class="pillar-title">Life Skills</h3><p>Table manners, 8-step toilet independence, and handwashing song.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">⚖️</div><h3 class="pillar-title">Ethics</h3><p>Fairness, honesty, kindness – taught through parables and real-life scenarios.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">💪</div><h3 class="pillar-title">Confidence Building</h3><p>Mirror self-portraits, emotion check-in, "I Can't YET" growth mindset.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">🔐</div><h3 class="pillar-title">Integrity Development</h3><p>Truth vs. lie, honest apologies, promise chain, integrity pledge.</p></div>
-                <div class="pillar-card reveal"><div class="pillar-icon">🛡️</div><h3 class="pillar-title">Safety & Emergency</h3><p>Turtle Pose (earthquake), Firefighter Crawl, Hide & Hush, Safety Selfie.</p></div>
+                <div class="pillar-card"><div class="pillar-icon">📖</div><div class="pillar-title">English & Literacy</div><div class="pillar-content">Letter sounds, vocabulary, conversation, pre-writing skills through songs and stories.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">🙏</div><div class="pillar-title">GMRC (Good Manners)</div><div class="pillar-content">"Po," "opo," please, thank you, excuse me, mano po, sharing, gentle hands.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">🌍</div><div class="pillar-title">Cultural Exposure</div><div class="pillar-content">Philippine festivals (Sinulog, Ati-Atihan), global celebrations (Lunar New Year, Diwali).</div></div>
+                <div class="pillar-card"><div class="pillar-icon">🧼</div><div class="pillar-title">Life Skills</div><div class="pillar-content">8-step toilet independence, handwashing song, table manners, toothbrushing demo.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">⚖️</div><div class="pillar-title">Ethics</div><div class="pillar-content">Fairness, honesty, kindness, responsibility – taught through parables and real-life scenarios.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">💪</div><div class="pillar-title">Confidence Building</div><div class="pillar-content">Mirror self-portraits, emotion check-in, "I Can't YET" growth mindset, public speaking.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">🔐</div><div class="pillar-title">Integrity Development</div><div class="pillar-content">Truth vs. lie puppet stories, honest apologies, Promise Chain, Integrity Pledge.</div></div>
+                <div class="pillar-card"><div class="pillar-icon">🛡️</div><div class="pillar-title">Safety & Emergency</div><div class="pillar-content">Turtle Pose (earthquake), Firefighter Crawl, Hide & Hush, Safety Selfie.</div></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Inclusive Education Section -->
-    <section class="section" id="inclusive">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Inclusive Education for All</h2>
-                <div class="section-subtitle">Under R.A. 11650 and R.A. 12199, we provide reasonable accommodations for children with special needs.</div>
+        <section><h2 class="section-title">Legal & Regulatory Framework</h2><p class="section-subtitle">Click each law to learn more.</p>
+            <div class="legal-grid">
+                <div class="legal-card"><h3><i class="fas fa-gavel"></i> R.A. 12199</h3><div class="legal-summary">ECCD System Act of 2025 – Primary law governing Child Development Centers.</div><div class="legal-full"><strong>Key Provisions:</strong> Mandates CDCs in every barangay. Professionalizes CDWs and CDTs. Requires accommodations for children with disabilities. Establishes Child Find System.</div></div>
+                <div class="legal-card"><h3><i class="fas fa-universal-access"></i> R.A. 11650</h3><div class="legal-summary">Inclusive Education Act – Mandates inclusive education for learners with disabilities.</div><div class="legal-full"><strong>Key Provisions:</strong> Right to inclusive education. Reasonable accommodations required. Prohibits discrimination. Requires IIPs.</div></div>
+                <div class="legal-card"><h3><i class="fas fa-hand-holding-usd"></i> R.A. 6389</h3><div class="legal-summary">Foreign Gifts and Grants Act – Governs receipt of foreign donations.</div><div class="legal-full"><strong>Key Provisions:</strong> Must notify DFA and NEDA within 30 days of receiving foreign donations. Annual reporting to SEC required.</div></div>
+                <div class="legal-card"><h3><i class="fas fa-shield-alt"></i> R.A. 9160</h3><div class="legal-summary">Anti-Money Laundering Act – Requires due diligence on donors.</div><div class="legal-full"><strong>Key Provisions:</strong> Organizations must screen donors and report suspicious transactions.</div></div>
+                <div class="legal-card"><h3><i class="fas fa-lock"></i> R.A. 10173</h3><div class="legal-summary">Data Privacy Act – Protects personal information.</div><div class="legal-full"><strong>Key Provisions:</strong> Data collected with consent, stored securely. We have a Data Protection Officer and comply fully.</div></div>
+                <div class="legal-card"><h3><i class="fas fa-chart-line"></i> R.A. 11232</h3><div class="legal-summary">Revised Corporation Code – Governs our General Partnership structure.</div><div class="legal-full"><strong>Key Provisions:</strong> Regulates formation and governance. Surety bond of ₱1,000,000 posted for Treasurer.</div></div>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-                <div class="reveal" style="background: var(--gray-100); border-radius: 20px; padding: 32px;">
-                    <i class="fas fa-puzzle-piece" style="font-size: 2rem; color: var(--secondary); margin-bottom: 16px;"></i>
-                    <h3>We Welcome Children With:</h3>
-                    <ul style="margin-top: 16px; list-style: none;">
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Autism Spectrum Disorder (Level 1)</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Global Developmental Delay (mild-moderate)</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> ADHD (with shadow if recommended)</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Speech and Language Delay</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Down Syndrome (mild, with shadow)</li>
-                    </ul>
-                </div>
-                <div class="reveal" style="background: var(--gray-100); border-radius: 20px; padding: 32px;">
-                    <i class="fas fa-file-alt" style="font-size: 2rem; color: var(--secondary); margin-bottom: 16px;"></i>
-                    <h3>Our Inclusive Services:</h3>
-                    <ul style="margin-top: 16px; list-style: none;">
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Individualized Inclusion Plan (IIP)</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Individualized Safety Plan (ISP)</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Shadow Teacher integration</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Visual schedules and PECS</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i> Sensory breaks and Safe Corner</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="reveal" style="text-align: center; margin-top: 40px;">
-                <a href="/inclusion" class="btn btn-primary">Learn About Our Inclusion Program <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Safety Section -->
-    <section class="section section-dark" id="safety">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">🛡️ Safety Without Fear</h2>
-                <div class="section-subtitle">The only preschool in DMCI with explicit, age-appropriate safety drills.</div>
+        <section><h2 class="section-title">Our Locations</h2><p class="section-subtitle">Click the map link for directions.</p>
+            <div class="location-grid">
+                <div class="location-card"><h3><i class="fas fa-building"></i> Headquarters (BGC)</h3><p>1206 Trade and Finance Tower, 7th Avenue cor 32nd Street, BGC, Taguig City</p><a href="https://maps.google.com/?q=1206+Trade+and+Finance+Tower+BGC+Taguig" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
+                <div class="location-card"><h3><i class="fas fa-home"></i> Acacia Estates</h3><p>Cedar Crest Cluster, Marigold Condominium, Acacia Estates, Taguig City</p><a href="https://maps.google.com/?q=Acacia+Estates+Taguig" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
+                <div class="location-card"><h3><i class="fas fa-home"></i> Sheridan</h3><p>Sheridan Towers, Sheridan Street, Mandaluyong City</p><a href="https://maps.google.com/?q=Sheridan+Mandaluyong" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
+                <div class="location-card"><h3><i class="fas fa-home"></i> Tree Park</h3><p>DMCI Tree Park, Ninoy Aquino Avenue, Parañaque City</p><a href="https://maps.google.com/?q=DMCI+Tree+Park+Paranaque" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
+                <div class="location-card"><h3><i class="fas fa-home"></i> Princeton</h3><p>Princeton Heights, Cainta, Rizal</p><a href="https://maps.google.com/?q=Princeton+Heights+Cainta" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
+                <div class="location-card"><h3><i class="fas fa-home"></i> Creek Side</h3><p>Creek Side Homes, Barangay San Miguel, Pasig City</p><a href="https://maps.google.com/?q=Creek+Side+Pasig" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a></div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                <div class="reveal" style="background: var(--primary); color: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <div style="font-size: 3rem;">🐢</div>
-                    <h3 style="margin: 16px 0;">Turtle Pose</h3>
-                    <p>Earthquake response: Drop, Cover, Hold. Taught through play, not fear.</p>
-                </div>
-                <div class="reveal" style="background: var(--accent); color: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <div style="font-size: 3rem;">🔥</div>
-                    <h3 style="margin: 16px 0;">Firefighter Crawl</h3>
-                    <p>Stop, Drop, Crawl like a snake. Low smoke, low crawl.</p>
-                </div>
-                <div class="reveal" style="background: var(--info); color: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <div style="font-size: 3rem;">🤫</div>
-                    <h3 style="margin: 16px 0;">Hide & Hush</h3>
-                    <p>Lockdown response: Hide in safe corner, be silent like mice.</p>
-                </div>
-                <div class="reveal" style="background: var(--success); color: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <div style="font-size: 3rem;">📸</div>
-                    <h3 style="margin: 16px 0;">Safety Selfie</h3>
-                    <p>After every drill, we take a group photo. "I am safe. I am brave."</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Locations Section -->
-    <section class="section" id="locations">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">📍 Our Locations</h2>
-                <div class="section-subtitle">We bring quality early childhood education to your doorstep.</div>
+        <section><h2 class="section-title">🛡️ Safety Without Fear</h2><p class="section-subtitle">Click any drill to learn more.</p>
+            <div class="safety-grid">
+                <div class="safety-card"><div class="safety-icon">🐢</div><h3>Turtle Pose (Earthquake)</h3><div class="safety-short">Drop, Cover, Hold. Taught through play, not fear.</div><div class="safety-full"><strong>Step-by-step:</strong> 1. "Drop like a ripe mango" – drop to knees. 2. "Find your shell" – crawl under sturdy table. 3. "Tuck and hold" – cover head/neck, hold table leg. Song: "Mangoes fall when ready, we drop when ground is shaky!"</div></div>
+                <div class="safety-card"><div class="safety-icon">🔥</div><h3>Firefighter Crawl (Fire)</h3><div class="safety-short">Stop, Drop, Crawl like a snake.</div><div class="safety-full"><strong>Step-by-step:</strong> 1. "Freeze like a statue" – stop immediately. 2. "Drop to the ground" – lie flat. 3. "Crawl like a snake" – crawl low to avoid smoke. Obstacle course practice.</div></div>
+                <div class="safety-card"><div class="safety-icon">🤫</div><h3>Hide & Hush (Lockdown)</h3><div class="safety-short">Hide in safe corner, be silent like mice.</div><div class="safety-full"><strong>Step-by-step:</strong> 1. "Find your hiding spot" – designated safe corner. 2. "Hush like a mouse" – completely silent. 3. "Wait for all clear" – teacher gives signal. Sensory kits available.</div></div>
+                <div class="safety-card"><div class="safety-icon">🏔️</div><h3>High Ground Heroes (Typhoon)</h3><div class="safety-short">Move to highest area, stay together.</div><div class="safety-full"><strong>Step-by-step:</strong> 1. "Water goes down" – look at floor. 2. "We go UP" – move to designated high area. 3. "Stay together" – hold hands or stay with teacher.</div></div>
+                <div class="safety-card"><div class="safety-icon">📸</div><h3>Safety Selfie</h3><div class="safety-short">After every drill, we celebrate with a group photo.</div><div class="safety-full"><strong>Purpose:</strong> Signals "emergency is over, we are safe." Turns fear into celebration. Children pose with thumbs up. "I am safe. I am brave!"</div></div>
             </div>
-            <div class="reveal" style="background: var(--gray-100); border-radius: 20px; padding: 32px; margin-bottom: 30px;">
-                <h3 style="color: var(--primary);"><i class="fas fa-building"></i> Corporate Headquarters</h3>
-                <p><strong>1206, 12th Floor Trade and Finance Center, 7th Avenue corner 32nd Street, Fort Bonifacio, Bonifacio Global City, Taguig City, Fourth District, National Capital Region (NCR), 1630</strong></p>
-                <p>SEC Registration No. SEC260516-TR5ARDEFZWCHELE (Under Review) | General Partnership | R.A. 12199 Compliant CDC</p>
-            </div>
-            <div class="reveal" style="background: var(--gray-100); border-radius: 20px; padding: 32px;">
-                <h3 style="color: var(--primary);"><i class="fas fa-home"></i> Classroom Locations</h3>
-                <p style="margin-bottom: 16px;">Our learning hubs are located inside <strong>DMCI Estates and similar clustered, gated communities</strong> – so you never have to sit in traffic.</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
-                    <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Acacia Estates (Taguig)</div>
-                    <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Sheridan (Mandaluyong)</div>
-                    <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Tree Park (Parañaque)</div>
-                    <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Princeton (Cainta)</div>
-                    <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Creek Side (Pasig)</div>
-                    <div><i class="fas fa-plus-circle" style="color: var(--secondary);"></i> More locations coming soon!</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Get Involved Section -->
-    <section class="section section-dark" id="get-involved">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Get Involved</h2>
-                <div class="section-subtitle">Support inclusive education for children with special needs.</div>
+        <section><h2 class="section-title">Inclusive Education for All</h2><p class="section-subtitle">Under R.A. 11650, we provide reasonable accommodations. Click any condition or service to learn more.</p>
+            <div><h3><i class="fas fa-puzzle-piece" style="color: var(--secondary);"></i> We Welcome Children With:</h3>
+                <div class="condition-buttons"><button class="condition-btn active" data-condition="asd">Autism Spectrum Disorder (Level 1)</button><button class="condition-btn" data-condition="gdd">Global Developmental Delay (mild-moderate)</button><button class="condition-btn" data-condition="adhd">ADHD (with shadow if recommended)</button><button class="condition-btn" data-condition="speech">Speech and Language Delay</button><button class="condition-btn" data-condition="down">Down Syndrome (mild, with shadow)</button></div>
+                <div id="condition-asd" class="condition-content active"><strong>Autism Spectrum Disorder (Level 1):</strong> Children with ASD Level 1 are fully integrated. Accommodations include: visual schedules, PECS, social stories, sensory breaks, Safe Corner, noise-canceling headphones, weighted lap pads, and shadow teacher if recommended. IIP reviewed quarterly.</div>
+                <div id="condition-gdd" class="condition-content"><strong>Global Developmental Delay (mild-moderate):</strong> Extra support in communication, motor skills, and daily living. Accommodations: task analysis, extra time for transitions, simplified instructions, visual supports.</div>
+                <div id="condition-adhd" class="condition-content"><strong>ADHD:</strong> Structured routines, movement breaks, positive behavior support. Accommodations: preferential seating, fidget tools, timed activities, clear expectations, immediate positive reinforcement.</div>
+                <div id="condition-speech" class="condition-content"><strong>Speech and Language Delay:</strong> Communication support through: PECS, choice boards, "First-Then" boards, modeling and prompting, extra wait time. Coordinate with Speech Therapist.</div>
+                <div id="condition-down" class="condition-content"><strong>Down Syndrome (mild):</strong> Modified instructions, visual supports, extra time for tasks, sensory-friendly environment, shadow teacher if recommended. Focus on independence in self-care.</div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                <div class="reveal" style="background: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <i class="fas fa-hand-holding-heart" style="font-size: 2.5rem; color: var(--secondary);"></i>
-                    <h3 style="margin: 16px 0;">Donate</h3>
-                    <p>Your tax-deductible donation supports scholarships for children with special needs from low-income families.</p>
-                    <a href="/donate" class="btn btn-outline" style="margin-top: 16px;">Donate Now</a>
-                </div>
-                <div class="reveal" style="background: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <i class="fas fa-building" style="font-size: 2.5rem; color: var(--secondary);"></i>
-                    <h3 style="margin: 16px 0;">Sponsor a Child</h3>
-                    <p>Corporate sponsorships available. Tiered packages: Bronze (₱50k), Silver (₱100k), Gold (₱250k), Platinum (₱500k+).</p>
-                    <a href="/sponsor" class="btn btn-outline" style="margin-top: 16px;">Become a Sponsor</a>
-                </div>
-                <div class="reveal" style="background: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--secondary);"></i>
-                    <h3 style="margin: 16px 0;">Partner With Us</h3>
-                    <p>For therapy centers, DMCI, government agencies, and international organizations.</p>
-                    <a href="/partner" class="btn btn-outline" style="margin-top: 16px;">Become a Partner</a>
-                </div>
-                <div class="reveal" style="background: white; border-radius: 20px; padding: 30px; text-align: center;">
-                    <i class="fas fa-users" style="font-size: 2.5rem; color: var(--secondary);"></i>
-                    <h3 style="margin: 16px 0;">Volunteer</h3>
-                    <p>Teacher aides, therapy volunteers, and administrative support.</p>
-                    <a href="/volunteer" class="btn btn-outline" style="margin-top: 16px;">Join Us</a>
-                </div>
+            <div style="margin-top: 30px;"><h3><i class="fas fa-file-alt" style="color: var(--info);"></i> Our Inclusive Services:</h3>
+                <div class="service-buttons"><button class="service-btn active" data-service="iip">Individualized Inclusion Plan (IIP)</button><button class="service-btn" data-service="isp">Individualized Safety Plan (ISP)</button><button class="service-btn" data-service="shadow">Shadow Teacher Integration</button><button class="service-btn" data-service="visual">Visual Schedules and PECS</button><button class="service-btn" data-service="sensory">Sensory Breaks and Safe Corner</button></div>
+                <div id="service-iip" class="service-content active"><strong>Individualized Inclusion Plan (IIP):</strong> Written plan developed with parents, teachers, and therapists. Includes: strengths and challenges, specific goals, accommodations, behavior support, quarterly reviews.</div>
+                <div id="service-isp" class="service-content"><strong>Individualized Safety Plan (ISP):</strong> Addresses emergency drills. Adaptations for earthquake, fire, lockdown. Assesses elopement risk. Reviewed annually.</div>
+                <div id="service-shadow" class="service-content"><strong>Shadow Teacher Integration:</strong> For children requiring 1:1 support, parents may hire a shadow teacher. Academy provides: workspace, integration, supervision. Monthly coordination fee: ₱1,000.</div>
+                <div id="service-visual" class="service-content"><strong>Visual Schedules and PECS:</strong> Visual schedules show daily activities. PECS allows non-verbal children to communicate via picture exchange. Choice boards and "First-Then" boards available.</div>
+                <div id="service-sensory" class="service-content"><strong>Sensory Breaks and Safe Corner:</strong> Designated "Safe Corner" with dim lights, fidget toys, weighted lap pads. Children may request a sensory break when overwhelmed.</div>
             </div>
-        </div>
-    </section>
+            <div style="text-align: center; margin-top: 30px;"><a href="inclusion.html" class="btn btn-primary">Learn About Our Inclusion Program <i class="fas fa-arrow-right"></i></a></div>
+        </section>
 
-    <!-- Stats -->
-    <section class="section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="reveal"><div class="stat-number">8</div><div>Pillars of Learning</div></div>
-                <div class="reveal"><div class="stat-number">5+</div><div>DMCI Locations</div></div>
-                <div class="reveal"><div class="stat-number">100%</div><div>Inclusive Commitment</div></div>
-                <div class="reveal"><div class="stat-number">Weekly</div><div>Safety Drills</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <div class="cta-section reveal">
-        <h2 style="font-size: 2rem;">Ready to Enroll Your Child?</h2>
-        <p style="margin-top: 16px; max-width: 600px; margin-left: auto; margin-right: auto;">Join the only Child Development Center in DMCI that teaches confidence, integrity, GMRC, and safety drills – with full inclusive support for children with special needs. Operated by ACHIE EARLY CHILD DEVELOPMENT CRADLE CO., a SEC-registered General Partnership.</p>
-        <a href="/enroll" class="btn btn-white"><i class="fas fa-star"></i> Schedule a Tour</a>
-        <a href="/workshop" class="btn btn-outline" style="border-color: white; color: white; margin-left: 16px;"><i class="fas fa-calendar-alt"></i> Free Workshop</a>
+        <div class="cta-section"><h2 style="font-size: 1.8rem;">Ready to Enroll Your Child?</h2><p style="margin: 16px 0;">Join the only Child Development Center in DMCI that teaches confidence, integrity, GMRC, and safety drills – with full inclusive support for children with special needs.</p><a href="enroll.html" class="btn btn-white" style="background: white; color: var(--primary-dark);"><i class="fas fa-star"></i> Enroll Now</a> <a href="workshop.html" class="btn btn-outline" style="border-color: white; color: white; margin-left: 16px;"><i class="fas fa-calendar-alt"></i> Free Workshop</a></div>
     </div>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="section-subtitle">We'd love to hear from you.</div>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-                <div class="reveal">
-                    <form action="https://formspree.io/f/your-form-id" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid var(--gray-300); border-radius: 12px;">
-                        <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid var(--gray-300); border-radius: 12px;">
-                        <input type="tel" name="phone" placeholder="Phone Number" style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid var(--gray-300); border-radius: 12px;">
-                        <select name="location" style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid var(--gray-300); border-radius: 12px;">
-                            <option>Select your DMCI estate</option>
-                            <option>Acacia Estates (Taguig)</option>
-                            <option>Sheridan (Mandaluyong)</option>
-                            <option>Tree Park (Parañaque)</option>
-                            <option>Princeton (Cainta)</option>
-                            <option>Creek Side (Pasig)</option>
-                            <option>Other / Not in DMCI</option>
-                        </select>
-                        <textarea name="message" placeholder="Your message" rows="5" style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid var(--gray-300); border-radius: 12px;"></textarea>
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
-                    </form>
-                </div>
-                <div class="reveal">
-                    <div style="margin-bottom: 24px;">
-                        <h3><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> Headquarters</h3>
-                        <p>1206, 12th Floor Trade and Finance Center, 7th Avenue corner 32nd Street, Fort Bonifacio, Bonifacio Global City, Taguig City, 1630</p>
-                    </div>
-                    <div style="margin-bottom: 24px;">
-                        <h3><i class="fas fa-envelope"></i> Email</h3>
-                        <p><a href="mailto:info@childev-cradle.org" style="color: var(--primary);">info@childev-cradle.org</a></p>
-                    </div>
-                    <div style="margin-bottom: 24px;">
-                        <h3><i class="fas fa-phone-alt"></i> Phone</h3>
-                        <p><a href="tel:+63XXXXXXXXXX" style="color: var(--primary);">+63 (XXX) XXX-XXXX</a></p>
-                    </div>
-                    <div>
-                        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-tiktok"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <div class="footer-logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span style="color: var(--secondary);">Little Global Champ</span><small>Child Development Academy</small></div>
-                <p>A registered Child Development Center under R.A. 12199. Operated as a General Partnership. SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review).</p>
-                <div class="social-links" style="margin-top: 16px;">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#pillars">8 Pillars</a>
-                <a href="#inclusive">Inclusive Education</a>
-                <a href="#safety">Safety Program</a>
-                <a href="#get-involved">Get Involved</a>
-            </div>
-            <div class="footer-links">
-                <h4>For Parents</h4>
-                <a href="/enroll">Enroll Now</a>
-                <a href="/fees">Fee Structure</a>
-                <a href="/workshop">Free Workshop</a>
-                <a href="/faq">FAQs</a>
-                <a href="/resources">Parent Resources</a>
-            </div>
-            <div class="footer-links">
-                <h4>Legal</h4>
-                <a href="/privacy">Privacy Policy</a>
-                <a href="/terms">Terms of Use</a>
-                <a href="/data-privacy">Data Privacy Notice</a>
-                <a href="/partnership">Partnership Information</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. All rights reserved. | Little Global Champ Child Development Academy | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p>
-            <p style="margin-top: 8px; font-size: 0.75rem;">General Partnership | TIN: 236-234-744-000 / 214-660-768-000 | Surety Bond: ₱1,000,000.00 | DSWD Accreditation (Pending) | ECCD Council Certificate of Recognition (Pending)</p>
-            <p style="margin-top: 8px; font-size: 0.7rem;">This website is for informational purposes only. Partnership details are subject to SEC approval.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- Back to Top -->
-<a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
-
-<!-- Floating Chat Widget -->
-<div class="chat-widget" id="chatWidget">
-    <i class="fas fa-comment-dots"></i>
-</div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="read-me.html">Read Me</a><a href="enroll.html">Enroll Now</a><a href="live-dashboard.html">Live Data</a><a href="payment.html">Pay Online</a></div><div class="footer-links"><h4>For Parents</h4><a href="enroll.html">Enroll Now</a><a href="fees.html">Fee Structure</a><a href="workshop.html">Free Workshop</a><a href="faq.html">FAQs</a><a href="resources.html">Parent Resources</a></div><div class="footer-links"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="data-privacy.html">Data Privacy Notice</a><a href="partnership.html">Partnership Information</a></div><div class="footer-links"><h4>Get Involved</h4><a href="get-involved.html">Donate</a><a href="get-involved.html">Sponsor</a><a href="get-involved.html">Partner</a><a href="get-involved.html">Volunteer</a><a href="franchise.html">Franchise</a></div></div><div class="copyright"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review) | <a href="read-me.html">Read Me</a></p></div></div></footer>
 
 <script>
-    // Loader
-    window.addEventListener('load', () => {
-        document.getElementById('loader').classList.add('hide');
-    });
-    
-    // Mobile Menu
-    const mobileBtn = document.getElementById('mobileMenuBtn');
-    const navLinks = document.getElementById('navLinks');
-    if (mobileBtn) {
-        mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = mobileBtn.querySelector('i');
-            if (icon) {
-                if (navLinks.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            }
-        });
-    }
-    
-    // Back to Top
-    const backBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backBtn.classList.add('show');
-        } else {
-            backBtn.classList.remove('show');
-        }
-    });
-    
-    // Scroll Reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, { threshold: 0.1 });
-    reveals.forEach(reveal => observer.observe(reveal));
-    
-    // Chat Widget
-    const chatWidget = document.getElementById('chatWidget');
-    if (chatWidget) {
-        chatWidget.addEventListener('click', () => {
-            window.location.href = "https://wa.me/63XXXXXXXXXX?text=Hello%20ACHIE%20EARLY%20CHILD%20DEVELOPMENT%20CRADLE%20CO.!%20I%20want%20to%20learn%20more%20about%20enrolling%20my%20child%20at%20Little%20Global%20Champ.";
-        });
-    }
-    
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
-            const target = document.querySelector(href);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
+    document.querySelectorAll('.pillar-card').forEach(c => c.addEventListener('click', function() { this.classList.toggle('active'); }));
+    document.querySelectorAll('.legal-card').forEach(c => c.addEventListener('click', function() { this.classList.toggle('active'); }));
+    document.querySelectorAll('.safety-card').forEach(c => c.addEventListener('click', function() { this.classList.toggle('active'); }));
+    const conditionBtns = document.querySelectorAll('.condition-btn');
+    conditionBtns.forEach(btn => { btn.addEventListener('click', () => { conditionBtns.forEach(b => b.classList.remove('active')); btn.classList.add('active'); document.querySelectorAll('.condition-content').forEach(c => c.classList.remove('active')); document.getElementById(`condition-${btn.dataset.condition}`).classList.add('active'); }); });
+    const serviceBtns = document.querySelectorAll('.service-btn');
+    serviceBtns.forEach(btn => { btn.addEventListener('click', () => { serviceBtns.forEach(b => b.classList.remove('active')); btn.classList.add('active'); document.querySelectorAll('.service-content').forEach(c => c.classList.remove('active')); document.getElementById(`service-${btn.dataset.service}`).classList.add('active'); }); });
 </script>
 </body>
 </html>

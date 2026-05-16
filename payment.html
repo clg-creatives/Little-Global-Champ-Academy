@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Online | Tuition, Donations, Fees | Little Global Champ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: #1a2c3e; }
+        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --success: #2A9D8F; --info: #5E60CE; --white: #ffffff; --gray-100: #f8f9fa; --gray-200: #e9ecef; --gray-300: #dee2e6; --gray-600: #6c757d; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
+        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+        .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-600); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn-primary { background: var(--secondary); color: var(--primary-dark); padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; }
+        .btn-success { background: var(--success); color: white; border: none; padding: 12px 24px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: inline-flex; align-items: center; gap: 10px; }
+        .btn-success:hover { background: #21867a; transform: translateY(-2px); }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); }
+        .payment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 40px 0; }
+        .payment-card { background: var(--white); border-radius: 24px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s; text-align: center; }
+        .payment-card:hover { transform: translateY(-5px); }
+        .payment-icon { font-size: 3rem; margin-bottom: 15px; }
+        .payment-title { font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 15px; }
+        .qr-container { background: var(--white); padding: 15px; border-radius: 16px; margin: 15px 0; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .qr-code { width: 180px; height: 180px; background: #f8f9fa; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--gray-600); border: 1px dashed var(--gray-300); }
+        .account-details { background: var(--gray-100); border-radius: 16px; padding: 15px; text-align: left; margin: 15px 0; }
+        .account-details p { margin: 8px 0; font-family: monospace; font-size: 0.9rem; word-break: break-all; }
+        .copy-btn { background: var(--gray-200); border: none; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; cursor: pointer; margin-left: 8px; }
+        .copy-btn:hover { background: var(--secondary); color: white; }
+        .amount-selector { background: var(--gray-100); border-radius: 16px; padding: 20px; margin: 20px 0; }
+        .amount-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; }
+        .amount-btn { background: var(--gray-200); border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer; font-weight: 500; transition: all 0.3s; }
+        .amount-btn:hover, .amount-btn.active { background: var(--secondary); color: var(--primary-dark); }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer a { color: var(--secondary); text-decoration: none; }
+        input { padding: 10px; border-radius: 50px; border: 1px solid var(--gray-300); width: 100%; max-width: 200px; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .qr-code { width: 140px; height: 140px; } }
+    </style>
+</head>
+<body>
+
+<div style="background: var(--primary-dark); color: white; padding: 8px 0; font-size: 0.8rem; text-align: center;"><div class="container"><i class="fas fa-lock"></i> Secure Payment Portal | All major payment methods accepted</div></div>
+
+<header class="header"><div class="nav-container"><a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a><div class="nav-links"><a href="index.html">Home</a><a href="live-dashboard.html">Live Data</a><a href="payment.html" style="color: var(--success);"><i class="fas fa-credit-card"></i> Pay Online</a><a href="enroll.html">Enroll</a><a href="franchise.html">Franchise</a></div></div></header>
+
+<main><div class="container"><div style="padding: 20px 0;"><a href="index.html" style="color: var(--primary); text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Home</a></div>
+<h1 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-credit-card"></i> Pay Online</h1><p style="color: var(--gray-600); margin-bottom: 20px;">Secure payment portal for tuition fees, donations, sponsorships, and franchise fees.</p>
+
+<div class="payment-card" style="text-align: left;"><h3><i class="fas fa-tag"></i> Select Payment Type</h3>
+<div class="amount-buttons"><button class="amount-btn active" data-type="tuition">💰 Tuition Fee</button><button class="amount-btn" data-type="donation">🤝 Donation</button><button class="amount-btn" data-type="sponsorship">⭐ Sponsorship</button><button class="amount-btn" data-type="franchise">🏢 Franchise Fee</button></div>
+<div id="amountDisplay" class="amount-selector"><p><strong>Suggested Amount:</strong> <span id="suggestedAmount">₱10,000</span></p><div class="amount-buttons" id="dynamicAmounts"><button class="amount-btn" data-amount="5000">₱5,000</button><button class="amount-btn active" data-amount="10000">₱10,000</button><button class="amount-btn" data-amount="15000">₱15,000</button><button class="amount-btn" data-amount="20000">₱20,000</button></div><p><strong>Or enter custom amount:</strong></p><input type="number" id="customAmount" placeholder="Enter amount in ₱"></div></div>
+
+<div class="payment-grid">
+    <div class="payment-card"><div class="payment-icon"><i class="fab fa-google-pay" style="color: #0077b6;"></i></div><div class="payment-title">GCash</div><div class="qr-container"><div class="qr-code"><i class="fas fa-qrcode fa-3x"></i><br>Scan to Pay</div></div><div class="account-details"><p><strong>GCash Number:</strong> 0917-123-4567 <button class="copy-btn" onclick="copyText('09171234567')">Copy</button></p><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p></div><button class="btn-success" onclick="processPayment('GCash')"><i class="fab fa-google-pay"></i> Pay with GCash</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-m" style="color: #FF5A00; font-weight: 800; font-size: 2rem;"></i></div><div class="payment-title">Maya (formerly PayMaya)</div><div class="qr-container"><div class="qr-code"><i class="fas fa-qrcode fa-3x"></i><br>Scan to Pay</div></div><div class="account-details"><p><strong>Maya Number:</strong> 0917-123-4567 <button class="copy-btn" onclick="copyText('09171234567')">Copy</button></p><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p></div><button class="btn-success" onclick="processPayment('Maya')"><i class="fas fa-credit-card"></i> Pay with Maya</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-bank" style="color: #00A859;"></i></div><div class="payment-title">GoTyme Bank</div><div class="qr-container"><div class="qr-code"><i class="fas fa-qrcode fa-3x"></i><br>Scan to Pay</div></div><div class="account-details"><p><strong>GoTyme Account No.:</strong> 1234-5678-9012-3456 <button class="copy-btn" onclick="copyText('1234567890123456')">Copy</button></p><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p></div><button class="btn-success" onclick="processPayment('GoTyme')"><i class="fas fa-bank"></i> Pay with GoTyme</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-qrcode" style="color: #1A7F62;"></i></div><div class="payment-title">QRPh (InstaPay)</div><div class="qr-container"><div class="qr-code"><i class="fas fa-qrcode fa-3x"></i><br>Scan QRPh</div></div><div class="account-details"><p><strong>QRPh Merchant ID:</strong> ACHIE-EDU-2024-001 <button class="copy-btn" onclick="copyText('ACHIE-EDU-2024-001')">Copy</button></p><p><strong>Participating Banks:</strong> BPI, BDO, Metrobank, UnionBank, Landbank</p></div><button class="btn-success" onclick="processPayment('QRPh')"><i class="fas fa-qrcode"></i> Scan QRPh</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-university" style="color: #003C71;"></i></div><div class="payment-title">Bank of the Philippine Islands (BPI)</div><div class="account-details"><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p><p><strong>Account Number:</strong> 1234-5678-90 <button class="copy-btn" onclick="copyText('1234567890')">Copy</button></p><p><strong>Account Type:</strong> Business Checking</p><p><strong>Branch:</strong> BGC Corporate Center</p></div><button class="btn-success" onclick="processPayment('BPI')"><i class="fas fa-university"></i> Pay via BPI</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-building" style="color: #F5B800;"></i></div><div class="payment-title">BDO Unibank</div><div class="account-details"><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p><p><strong>Account Number:</strong> 9876-5432-10 <button class="copy-btn" onclick="copyText('9876543210')">Copy</button></p><p><strong>Account Type:</strong> Business Savings</p><p><strong>Branch:</strong> BGC Bonifacio</p></div><button class="btn-success" onclick="processPayment('BDO')"><i class="fas fa-building"></i> Pay via BDO</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fab fa-cc-visa" style="color: #1A1F71;"></i> <i class="fab fa-cc-mastercard" style="color: #EB001B;"></i></div><div class="payment-title">Credit / Debit Card</div><div class="account-details"><p><i class="fas fa-lock"></i> Secured by PayMongo (PCI DSS Level 1)</p><p><i class="fab fa-cc-visa"></i> Visa | <i class="fab fa-cc-mastercard"></i> Mastercard | <i class="fab fa-cc-amex"></i> Amex</p><p><small>2.5% convenience fee applies for credit card transactions</small></p></div><button class="btn-success" onclick="processPayment('Card')"><i class="fab fa-cc-visa"></i> Pay with Credit Card</button></div>
+    <div class="payment-card"><div class="payment-icon"><i class="fas fa-exchange-alt" style="color: #2A9D8F;"></i></div><div class="payment-title">InstaPay / PESONet</div><div class="account-details"><p><strong>Bank:</strong> BPI (as receiving bank)</p><p><strong>Account Name:</strong> ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p><p><strong>Account Number:</strong> 1234-5678-90 <button class="copy-btn" onclick="copyText('1234567890')">Copy</button></p><p><strong>Reference:</strong> Your Name + Payment Type</p></div><button class="btn-success" onclick="processPayment('InstaPay')"><i class="fas fa-exchange-alt"></i> Pay via InstaPay</button></div>
+</div>
+
+<div class="payment-card" style="text-align: left;"><h3><i class="fas fa-info-circle"></i> Payment Instructions</h3><ol style="margin-left: 20px; line-height: 1.8;"><li>Select your preferred payment method above.</li><li>Enter the exact amount.</li><li>Use the QR code or account details to complete your transfer.</li><li>After payment, send screenshot to <strong>payments@childev-cradle.org</strong> or WhatsApp to <strong>+63 XXX XXX XXXX</strong>.</li><li>Include your child's name (for tuition) or your name (for donations).</li><li>You will receive an official receipt within 24 hours.</li></ol><div style="margin-top: 20px; padding: 15px; background: var(--gray-100); border-radius: 12px;"><p><i class="fas fa-clock"></i> Allow 1-2 business days for bank transfers. GCash/Maya/GoTyme payments are instant.</p><p><i class="fas fa-envelope"></i> Questions? <a href="mailto:payments@childev-cradle.org" style="color: var(--primary);">payments@childev-cradle.org</a></p></div></div></div></main>
+
+<footer class="footer"><div class="container"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p><p><a href="index.html">Home</a> | <a href="live-dashboard.html">Live Dashboard</a> | <a href="payment.html">Pay Online</a> | <a href="franchise.html">Franchise</a></p><p><i class="fas fa-lock"></i> Secure SSL Encrypted | PCI DSS Compliant Payment Processing</p></div></footer>
+
+<script>
+    const amountOptions = { tuition: ['₱5,000', '₱10,000', '₱15,000', '₱20,000', '₱25,000'], donation: ['₱500', '₱1,000', '₱2,500', '₱5,000', '₱10,000'], sponsorship: ['₱3,000', '₱5,000', '₱10,000', '₱20,000', '₱50,000'], franchise: ['₱250,000', '₱500,000', '₱1,500,000'] };
+    const typeBtns = document.querySelectorAll('[data-type]');
+    const dynamicAmounts = document.getElementById('dynamicAmounts');
+    const suggestedSpan = document.getElementById('suggestedAmount');
+    typeBtns.forEach(btn => { btn.addEventListener('click', () => { typeBtns.forEach(b => b.classList.remove('active')); btn.classList.add('active'); const type = btn.getAttribute('data-type'); suggestedSpan.textContent = amountOptions[type][1]; dynamicAmounts.innerHTML = ''; amountOptions[type].forEach(amt => { const amountBtn = document.createElement('button'); amountBtn.className = 'amount-btn'; amountBtn.textContent = amt; amountBtn.setAttribute('data-amount', amt.replace('₱', '').replace(',', '')); amountBtn.onclick = () => { document.querySelectorAll('#dynamicAmounts .amount-btn').forEach(b => b.classList.remove('active')); amountBtn.classList.add('active'); document.getElementById('customAmount').value = ''; }; dynamicAmounts.appendChild(amountBtn); }); document.querySelector('#dynamicAmounts .amount-btn').classList.add('active'); }); });
+    function getSelectedAmount() { const activeAmount = document.querySelector('#dynamicAmounts .amount-btn.active'); if (activeAmount && !document.getElementById('customAmount').value) return activeAmount.getAttribute('data-amount'); return document.getElementById('customAmount').value; }
+    function copyText(text) { navigator.clipboard.writeText(text); alert('Copied: ' + text); }
+    function processPayment(method) { const paymentType = document.querySelector('[data-type].active').getAttribute('data-type'); const amount = getSelectedAmount(); if (!amount || amount <= 0) { alert('Please select or enter a valid amount.'); return; } alert(`Payment initiated via ${method}\nAmount: ₱${amount}\nType: ${paymentType}\n\nComplete your transfer. Send screenshot to payments@childev-cradle.org`); if (method === 'Card') window.open('https://paymongo.com/pay/achieve-education-cradle', '_blank'); }
+</script>
+</body>
+</html>

@@ -8,75 +8,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #1a2c3e; background: #f8f9fa; }
-        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --white: #ffffff; --gray-100: #f8f9fa; --gray-600: #6c757d; --gray-800: #343a40; }
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-        .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 16px 32px; }
+        body { font-family: 'Inter', sans-serif; background: #f8f9fa; color: #1a2c3e; }
+        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --white: #ffffff; --gray-100: #f8f9fa; --gray-200: #e9ecef; --gray-600: #6c757d; --gray-800: #343a40; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
         .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
         .logo span { color: var(--secondary); }
-        .section { padding: 40px 0; }
-        .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary); }
-        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; text-align: center; font-size: 0.85rem; margin-top: 40px; }
-        .policy-content { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .policy-content h3 { margin: 24px 0 12px; color: var(--primary); }
-        .policy-content p { margin-bottom: 16px; line-height: 1.6; color: var(--gray-600); }
-        .info-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--gray-100); padding: 12px 0; }
-        .info-label { font-weight: 600; color: var(--gray-800); }
-        .back-home { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; }
+        .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .policy-content { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin: 30px 0; }
+        .info-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--gray-200); padding: 12px 0; }
+        .info-label { font-weight: 700; color: var(--gray-800); }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer a { color: var(--secondary); text-decoration: none; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .info-grid { grid-template-columns: 1fr; gap: 4px; } }
     </style>
 </head>
 <body>
 
+<div style="background: var(--primary-dark); color: white; padding: 8px 0; font-size: 0.8rem; text-align: center;"><div class="container"><i class="fas fa-handshake"></i> General Partnership | SEC Registered | Transparent Operations</div></div>
+
 <header class="header">
-    <div class="container">
-        <a href="/" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+    <div class="nav-container">
+        <a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="read-me.html">Read Me</a>
+            <a href="enroll.html">Enroll Now</a>
+            <a href="partnership.html" style="color: var(--secondary);">Partnership</a>
+            <a href="live-dashboard.html">Live Data</a>
+            <a href="payment.html">Pay Online</a>
+        </div>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <div style="padding: 20px 0;">
-            <a href="/" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <div style="padding: 20px 0;"><a href="index.html" style="color: var(--primary); text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Home</a></div>
+        <h1 style="color: var(--primary); margin-bottom: 10px;">Partnership Information</h1>
+        <p style="color: var(--gray-600); margin-bottom: 20px;">Transparency, legal structure, and governance of ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</p>
+
+        <div class="policy-content">
+            <div class="info-grid"><div class="info-label">Legal Name:</div><div>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</div></div>
+            <div class="info-grid"><div class="info-label">Trade Name:</div><div>Little Global Champ Child Development Academy</div></div>
+            <div class="info-grid"><div class="info-label">Legal Structure:</div><div>General Partnership</div></div>
+            <div class="info-grid"><div class="info-label">SEC Registration No.:</div><div>SEC260516-TR5ARDEFZWCHELE (Under Review)</div></div>
+            <div class="info-grid"><div class="info-label">Principal Office:</div><div>1206, 12th Floor Trade and Finance Center, 7th Avenue cor 32nd Street, Fort Bonifacio, BGC, Taguig City, 1630</div></div>
+            <div class="info-grid"><div class="info-label">Term:</div><div>Indefinite (Perpetual)</div></div>
+            <div class="info-grid"><div class="info-label">Surety Bond:</div><div>₱1,000,000.00 (SEC Memo Circular No. 7, Series of 2019)</div></div>
+
+            <h3 style="margin-top: 30px;">General Partners</h3>
+            <div class="info-grid"><div class="info-label">Marjorie LuzCel Arenas Bautista (Teacher Clarice)</div><div>Managing Partner / Treasurer | TIN: 236-234-744-000</div></div>
+            <div class="info-grid"><div class="info-label">Clarence Mercillo Morales</div><div>President | TIN: 214-660-768-000</div></div>
+
+            <h3>Regulatory Status</h3>
+            <div class="info-grid"><div class="info-label">SEC:</div><div>Under Review</div></div>
+            <div class="info-grid"><div class="info-label">DSWD:</div><div>Pending post-SEC approval</div></div>
+            <div class="info-grid"><div class="info-label">ECCD Council:</div><div>Pending post-SEC approval</div></div>
+            <div class="info-grid"><div class="info-label">BIR:</div><div>To be applied</div></div>
+            <div class="info-grid"><div class="info-label">LGU Taguig:</div><div>To be applied</div></div>
+
+            <h3>Donations Authority</h3>
+            <p>Under Article II of the Articles of Partnership, the Partnership is expressly authorized to solicit, receive, and administer sponsorships, donations, grants, endowments, bequests, and devises – local and foreign. Official donation receipts are issued for tax-deductible contributions under Section 34(H) of the National Internal Revenue Code.</p>
+
+            <h3>Verification</h3>
+            <p>You may verify our registration through the SEC Online Verification System: <a href="https://esecure.sec.gov.ph" target="_blank" style="color: var(--secondary);">https://esecure.sec.gov.ph</a></p>
+
+            <h3>Inspection of Documents</h3>
+            <p>The complete Articles of Partnership may be inspected at our principal office during regular business hours by appointment.</p>
         </div>
-        
-        <section class="section">
-            <h1 class="section-title">Partnership Information</h1>
-            <div class="policy-content">
-                <div class="info-grid"><div class="info-label">Legal Name:</div><div>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.</div></div>
-                <div class="info-grid"><div class="info-label">Trade Name:</div><div>Little Global Champ Child Development Academy</div></div>
-                <div class="info-grid"><div class="info-label">Legal Structure:</div><div>General Partnership</div></div>
-                <div class="info-grid"><div class="info-label">SEC Registration No.:</div><div>SEC260516-TR5ARDEFZWCHELE (Under Review)</div></div>
-                <div class="info-grid"><div class="info-label">Principal Office:</div><div>1206, 12th Floor Trade and Finance Center, 7th Avenue corner 32nd Street, Fort Bonifacio, BGC, Taguig City, 1630</div></div>
-                <div class="info-grid"><div class="info-label">Term:</div><div>Indefinite (Perpetual)</div></div>
-                <div class="info-grid"><div class="info-label">Surety Bond:</div><div>₱1,000,000.00 (SEC Memorandum Circular No. 7, Series of 2019)</div></div>
-                
-                <h3>General Partners</h3>
-                <div class="info-grid"><div class="info-label">Marjorie LuzCel Arenas Bautista</div><div>Managing Partner / Treasurer | TIN: 236-234-744-000</div></div>
-                <div class="info-grid"><div class="info-label">Clarence Mercillo Morales</div><div>President | TIN: 214-660-768-000</div></div>
-                
-                <h3>Regulatory Status</h3>
-                <div class="info-grid"><div class="info-label">SEC:</div><div>Under Review</div></div>
-                <div class="info-grid"><div class="info-label">DSWD:</div><div>Pending</div></div>
-                <div class="info-grid"><div class="info-label">ECCD Council:</div><div>Pending</div></div>
-                <div class="info-grid"><div class="info-label">BIR:</div><div>To be applied</div></div>
-                
-                <h3>Donations Authority</h3>
-                <p>Under Article II of the Articles of Partnership, the Partnership is expressly authorized to solicit, receive, and administer sponsorships, donations, grants, endowments, bequests, and devises – local and foreign.</p>
-                
-                <h3>Verification</h3>
-                <p>You may verify our registration through the SEC Online Verification System: <a href="https://esecure.sec.gov.ph" style="color: var(--secondary);">https://esecure.sec.gov.ph</a></p>
-                
-                <h3>Inspection of Documents</h3>
-                <p>The complete Articles of Partnership may be inspected at our principal office during regular business hours by appointment.</p>
-            </div>
-        </section>
     </div>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/partnership.html">Partnership Info</a></p>
-    </div>
-</footer>
+<footer class="footer"><div class="container"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="partnership.html">Partnership Info</a></p></div></footer>
 </body>
 </html>

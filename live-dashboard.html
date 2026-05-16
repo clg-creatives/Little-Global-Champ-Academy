@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Dashboard | Forex, Weather & Clock | Little Global Champ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: #1a2c3e; }
+        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --success: #2A9D8F; --white: #ffffff; --gray-100: #f8f9fa; --gray-600: #6c757d; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+        .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
+        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+        .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-600); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn-primary { background: var(--secondary); color: var(--primary-dark); padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin: 40px 0; }
+        .card { background: var(--white); border-radius: 24px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card h2 { font-size: 1.4rem; margin-bottom: 20px; color: var(--primary); display: flex; align-items: center; gap: 10px; border-bottom: 2px solid var(--gray-100); padding-bottom: 12px; }
+        .clock-container { text-align: center; padding: 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 20px; color: white; }
+        .time { font-size: 3.5rem; font-weight: 800; font-family: monospace; letter-spacing: 2px; }
+        .date { font-size: 1.2rem; margin-top: 10px; opacity: 0.9; }
+        .timezone { font-size: 0.9rem; margin-top: 8px; opacity: 0.7; }
+        .forex-table { width: 100%; border-collapse: collapse; }
+        .forex-table th, .forex-table td { padding: 12px 8px; text-align: left; border-bottom: 1px solid var(--gray-100); }
+        .forex-table th { color: var(--gray-600); font-weight: 500; }
+        .rate-up { color: var(--success); }
+        .weather-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--gray-100); }
+        .weather-city { font-weight: 600; }
+        .weather-temp { font-size: 1.3rem; font-weight: 700; }
+        .weather-desc { font-size: 0.8rem; color: var(--gray-600); }
+        .refresh-btn { background: var(--gray-100); border: none; padding: 8px 16px; border-radius: 50px; cursor: pointer; font-size: 0.8rem; margin-top: 15px; transition: all 0.3s; }
+        .refresh-btn:hover { background: var(--secondary); color: white; }
+        .last-updated { font-size: 0.7rem; color: var(--gray-600); text-align: right; margin-top: 15px; }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer a { color: var(--secondary); text-decoration: none; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .time { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+<div style="background: var(--primary-dark); color: white; padding: 8px 0; font-size: 0.8rem; text-align: center;"><div class="container"><i class="fas fa-chart-line"></i> Live Data | Real-Time Updates | Philippine Time (PHT)</div></div>
+
+<header class="header"><div class="nav-container"><a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a><div class="nav-links"><a href="index.html">Home</a><a href="live-dashboard.html" style="color: var(--secondary);"><i class="fas fa-chart-line"></i> Live Data</a><a href="payment.html" style="color: var(--success);"><i class="fas fa-credit-card"></i> Pay Online</a><a href="enroll.html">Enroll</a><a href="franchise.html">Franchise</a><a href="enroll.html" class="btn-primary" style="padding: 8px 20px;">Enroll Now</a></div></div></header>
+
+<main><div class="container"><div style="padding: 20px 0;"><a href="index.html" style="color: var(--primary); text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Home</a></div>
+<h1 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-chart-line"></i> Live Dashboard</h1><p style="color: var(--gray-600); margin-bottom: 30px;">Real-time forex rates, weather updates, and Philippine clock – updated automatically.</p>
+<div class="dashboard-grid">
+    <div class="card"><h2><i class="fas fa-clock"></i> Philippine Clock</h2><div class="clock-container"><div class="time" id="time">--:--:--</div><div class="date" id="date">Loading...</div><div class="timezone"><i class="fas fa-globe-asia"></i> Philippine Time (UTC+8) | PHT</div></div></div>
+    <div class="card"><h2><i class="fas fa-dollar-sign"></i> Live Forex Rates</h2><table class="forex-table"><thead><tr><th>Currency</th><th>Rate (PHP)</th><th>Change</th></tr></thead><tbody id="forexBody"><tr><td colspan="3">Loading real-time rates...</td></tr></tbody></table><button class="refresh-btn" onclick="fetchForexRates()"><i class="fas fa-sync-alt"></i> Refresh Now</button><div class="last-updated" id="forexUpdated">Last updated: --</div></div>
+    <div class="card"><h2><i class="fas fa-cloud-sun"></i> Weather</h2><div id="weatherContainer"><div class="weather-item"><div class="weather-city"><i class="fas fa-map-marker-alt"></i> Manila</div><div class="weather-temp" id="manilaTemp">--°C</div><div class="weather-desc" id="manilaDesc">Loading...</div></div><div class="weather-item"><div class="weather-city"><i class="fas fa-map-marker-alt"></i> BGC / Taguig</div><div class="weather-temp" id="bgcTemp">--°C</div><div class="weather-desc" id="bgcDesc">Loading...</div></div><div class="weather-item"><div class="weather-city"><i class="fas fa-map-marker-alt"></i> Cebu</div><div class="weather-temp" id="cebuTemp">--°C</div><div class="weather-desc" id="cebuDesc">Loading...</div></div><div class="weather-item"><div class="weather-city"><i class="fas fa-map-marker-alt"></i> Davao</div><div class="weather-temp" id="davaoTemp">--°C</div><div class="weather-desc" id="davaoDesc">Loading...</div></div></div><button class="refresh-btn" onclick="fetchWeather()"><i class="fas fa-sync-alt"></i> Refresh Weather</button><div class="last-updated" id="weatherUpdated">Last updated: --</div></div>
+</div></div></main>
+
+<footer class="footer"><div class="container"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p><p><a href="index.html">Home</a> | <a href="live-dashboard.html">Live Dashboard</a> | <a href="payment.html">Pay Online</a> | <a href="franchise.html">Franchise</a></p></div></footer>
+
+<script>
+    function updateClock() { const now = new Date(); const phTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Manila"})); document.getElementById('time').textContent = String(phTime.getHours()).padStart(2,'0')+':'+String(phTime.getMinutes()).padStart(2,'0')+':'+String(phTime.getSeconds()).padStart(2,'0'); document.getElementById('date').textContent = phTime.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }); }
+    updateClock(); setInterval(updateClock, 1000);
+    async function fetchForexRates() { try { const response = await fetch('https://api.exchangerate-api.com/v4/latest/PHP'); const data = await response.json(); const currencies = ['USD', 'EUR', 'GBP', 'JPY', 'CNY', 'SGD', 'AUD', 'CAD', 'HKD']; const tbody = document.getElementById('forexBody'); tbody.innerHTML = ''; for (const currency of currencies) { if (data.rates[currency]) { tbody.innerHTML += `<tr><td><strong>${currency}</strong></td><td>₱ ${(1 / data.rates[currency]).toFixed(2)}</td><td><span class="rate-up"><i class="fas fa-arrow-up"></i> +0.00</span></td></tr>`; } } document.getElementById('forexUpdated').innerHTML = `Last updated: ${new Date().toLocaleTimeString()}`; } catch (error) { const fallback = { USD: 56.50, EUR: 61.20, GBP: 71.80, JPY: 0.36, CNY: 7.85, SGD: 42.00, AUD: 37.50, CAD: 41.20, HKD: 7.23 }; const tbody = document.getElementById('forexBody'); tbody.innerHTML = ''; for (const [currency, rate] of Object.entries(fallback)) { tbody.innerHTML += `<tr><td><strong>${currency}</strong></td><td>₱ ${rate.toFixed(2)}</td><td><span class="rate-up"><i class="fas fa-info-circle"></i> Approx</span></td></tr>`; } } }
+    async function fetchWeather() { const cities = [{ id: 'manila', query: 'Manila' }, { id: 'bgc', query: 'Taguig' }, { id: 'cebu', query: 'Cebu+City' }, { id: 'davao', query: 'Davao+City' }]; for (const city of cities) { try { const response = await fetch(`https://wttr.in/${city.query}?format=%t+%C&lang=en`); const data = await response.text(); const match = data.match(/([+-]?\d+°C)\s+(.+)/); if (match) { document.getElementById(`${city.id}Temp`).innerHTML = match[1]; document.getElementById(`${city.id}Desc`).innerHTML = match[2]; } } catch(e) { document.getElementById(`${city.id}Temp`).innerHTML = '--°C'; document.getElementById(`${city.id}Desc`).innerHTML = 'Unavailable'; } } document.getElementById('weatherUpdated').innerHTML = `Last updated: ${new Date().toLocaleTimeString()}`; }
+    fetchForexRates(); fetchWeather(); setInterval(fetchWeather, 30 * 60 * 1000); setInterval(fetchForexRates, 5 * 60 * 1000);
+</script>
+</body>
+</html>

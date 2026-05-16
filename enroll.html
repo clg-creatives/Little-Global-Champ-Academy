@@ -4,182 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enroll Now | Little Global Champ Child Development Academy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #1a2c3e; background: #f8f9fa; line-height: 1.5; }
-        :root { --primary: #2A5C7D; --primary-light: #3f7b9e; --primary-dark: #1a3e55; --secondary: #F4A261; --secondary-dark: #e0761e; --success: #2A9D8F; --gray-100: #f8f9fa; --gray-200: #e9ecef; --gray-300: #dee2e6; --gray-600: #6c757d; --gray-800: #343a40; --white: #ffffff; }
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        body { font-family: 'Inter', sans-serif; background: #f8f9fa; color: #1a2c3e; }
+        :root { --primary: #2A5C7D; --primary-dark: #1a3e55; --secondary: #F4A261; --success: #2A9D8F; --white: #ffffff; --gray-200: #e9ecef; --gray-300: #dee2e6; --gray-600: #6c757d; --gray-800: #343a40; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
         .header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 16px; }
         .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); text-decoration: none; }
         .logo span { color: var(--secondary); }
         .logo small { font-size: 0.65rem; font-weight: normal; color: var(--gray-600); display: block; }
-        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s; cursor: pointer; border: none; }
-        .btn-primary { background: var(--secondary); color: var(--primary-dark); }
-        .btn-primary:hover { background: var(--secondary-dark); transform: translateY(-2px); }
-        .btn-outline { border: 2px solid var(--secondary); color: var(--secondary); background: transparent; }
-        .btn-outline:hover { background: var(--secondary); color: white; }
-        .section { padding: 60px 0; }
-        .section-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: var(--primary); }
-        .section-subtitle { text-align: center; color: var(--gray-600); max-width: 700px; margin: 0 auto 40px; }
-        .form-container { background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 800px; margin: 0 auto; }
+        .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn-primary { background: var(--secondary); color: var(--primary-dark); padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #e0761e; transform: translateY(-2px); }
+        .form-container { background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin: 30px 0; }
         .form-group { margin-bottom: 20px; }
         label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--gray-800); }
-        input, select, textarea { width: 100%; padding: 12px 16px; border: 1px solid var(--gray-300); border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1rem; transition: all 0.2s; }
+        input, select, textarea { width: 100%; padding: 12px 16px; border: 1px solid var(--gray-300); border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1rem; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(244,162,97,0.1); }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 768px) { .form-row { grid-template-columns: 1fr; } }
-        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 40px 0 20px; margin-top: 40px; text-align: center; font-size: 0.85rem; }
+        .footer { background: var(--primary-dark); color: var(--gray-400); padding: 30px 0; margin-top: 40px; text-align: center; font-size: 0.85rem; }
         .footer a { color: var(--secondary); text-decoration: none; }
-        .back-home { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; }
-        .back-home:hover { color: var(--secondary); }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; } .form-row { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
+<div style="background: var(--primary-dark); color: white; padding: 8px 0; font-size: 0.8rem; text-align: center;"><div class="container"><i class="fas fa-check-circle"></i> SEC Registered Partnership No. SEC260516-TR5ARDEFZWCHELE (Under Review)</div></div>
+
 <header class="header">
     <div class="nav-container">
-        <a href="/" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <a href="index.html" class="logo">ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.<br><span>Little Global Champ</span><small>Child Development Academy</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="read-me.html">Read Me</a>
+            <a href="enroll.html" style="color: var(--secondary);">Enroll Now</a>
+            <a href="live-dashboard.html">Live Data</a>
+            <a href="payment.html">Pay Online</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="get-involved.html">Get Involved</a>
+        </div>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <div style="padding: 20px 0;">
-            <a href="/" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
-        </div>
+        <div style="padding: 20px 0;"><a href="index.html" style="color: var(--primary); text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Home</a></div>
         
-        <section class="section">
-            <h1 class="section-title">Enroll Your Child Today</h1>
-            <p class="section-subtitle">Join the only Child Development Center in DMCI that teaches confidence, integrity, GMRC, and safety drills.</p>
-            
-            <div class="form-container">
-                <form action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Child's Full Name *</label>
-                            <input type="text" name="child_name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Nickname</label>
-                            <input type="text" name="nickname">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Date of Birth *</label>
-                            <input type="date" name="dob" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Age</label>
-                            <input type="text" placeholder="Will be computed automatically" readonly>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Parent/Guardian Name *</label>
-                            <input type="text" name="parent_name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Relationship to Child</label>
-                            <select name="relationship">
-                                <option>Mother</option>
-                                <option>Father</option>
-                                <option>Grandparent</option>
-                                <option>Legal Guardian</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Email Address *</label>
-                            <input type="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Phone Number *</label>
-                            <input type="tel" name="phone" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>DMCI Estate / Community *</label>
-                        <select name="location" required>
-                            <option value="">Select your location</option>
-                            <option>Acacia Estates (Taguig)</option>
-                            <option>Sheridan (Mandaluyong)</option>
-                            <option>Tree Park (Parañaque)</option>
-                            <option>Princeton (Cainta)</option>
-                            <option>Creek Side (Pasig)</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Program of Interest *</label>
-                        <select name="program" required>
-                            <option>Full Day (7:30 AM – 3:30 PM) – ₱10,000-12,000/month</option>
-                            <option>Half Day (8:00 AM – 12:00 PM) – ₱7,000-9,000/month</option>
-                            <option>Extended Care (until 6:00 PM) – +₱1,500/month</option>
-                            <option>Special Needs Support Fee – +₱3,000-5,000/month</option>
-                            <option>Shadow Teacher Coordination – +₱1,000/month</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Does your child have any special needs we should know about?</label>
-                        <textarea name="special_needs" rows="3" placeholder="Please describe any diagnoses, allergies, or accommodations needed..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>How did you hear about us?</label>
-                        <select name="referral">
-                            <option>Facebook</option>
-                            <option>Friend/Neighbor</option>
-                            <option>DMCI Resident Group</option>
-                            <option>Flyer</option>
-                            <option>Workshop</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    
-                    <div style="margin-top: 30px; text-align: center;">
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit Enrollment Application</button>
-                    </div>
-                    
-                    <p style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: var(--gray-600);">
-                        <i class="fas fa-lock"></i> Your information is secure. We will contact you within 24 hours.
-                    </p>
-                </form>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <p><strong>Prefer to talk to us?</strong> Call or WhatsApp us at <a href="tel:+63XXXXXXXXXX" style="color: var(--secondary);">+63 (XXX) XXX-XXXX</a></p>
-                <p>Email: <a href="mailto:info@childev-cradle.org" style="color: var(--secondary);">info@childev-cradle.org</a></p>
-            </div>
-        </section>
+        <h1 style="color: var(--primary); margin-bottom: 10px;">Enroll Your Child</h1>
+        <p style="color: var(--gray-600); margin-bottom: 20px;">Join the only Child Development Center in DMCI that teaches confidence, integrity, GMRC, and safety drills.</p>
+
+        <div class="form-container">
+            <form id="enrollForm">
+                <div class="form-row">
+                    <div class="form-group"><label>Child's Full Name *</label><input type="text" required></div>
+                    <div class="form-group"><label>Nickname</label><input type="text"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>Date of Birth *</label><input type="date" required></div>
+                    <div class="form-group"><label>Age</label><input type="text" placeholder="Will be computed" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>Parent/Guardian Name *</label><input type="text" required></div>
+                    <div class="form-group"><label>Relationship to Child</label><select><option>Mother</option><option>Father</option><option>Grandparent</option><option>Legal Guardian</option></select></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>Email Address *</label><input type="email" required></div>
+                    <div class="form-group"><label>Phone Number *</label><input type="tel" required></div>
+                </div>
+                <div class="form-group"><label>DMCI Estate / Community *</label><select required><option>Select your location</option><option>Acacia Estates (Taguig)</option><option>Sheridan (Mandaluyong)</option><option>Tree Park (Parañaque)</option><option>Princeton (Cainta)</option><option>Creek Side (Pasig)</option><option>Other</option></select></div>
+                <div class="form-group"><label>Program of Interest *</label><select required><option>Full Day (7:30 AM – 3:30 PM) – ₱10,000-12,000/month</option><option>Half Day (8:00 AM – 12:00 PM) – ₱7,000-9,000/month</option><option>Extended Care (until 6:00 PM) – +₱1,500/month</option><option>Special Needs Support Fee – +₱3,000-5,000/month</option><option>Shadow Teacher Coordination – +₱1,000/month</option></select></div>
+                <div class="form-group"><label>Does your child have any special needs?</label><textarea rows="3" placeholder="Please describe any diagnoses, allergies, or accommodations needed..."></textarea></div>
+                <div class="form-group"><label>How did you hear about us?</label><select><option>Facebook</option><option>Friend/Neighbor</option><option>DMCI Resident Group</option><option>Flyer</option><option>Workshop</option><option>Other</option></select></div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; display: flex; align-items: center; gap: 8px;"><i class="fas fa-paper-plane"></i> Submit Enrollment Application</button>
+                <p style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: var(--gray-600);"><i class="fas fa-lock"></i> Your information is secure. We will contact you within 24 hours.</p>
+            </form>
+        </div>
+        <div style="text-align: center;"><p><strong>Prefer to talk to us?</strong> Call or WhatsApp: <a href="tel:+63XXXXXXXXXX" style="color: var(--secondary);">+63 (XXX) XXX-XXXX</a> | Email: <a href="mailto:info@childev-cradle.org" style="color: var(--secondary);">info@childev-cradle.org</a></p></div>
     </div>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p>
-        <p><a href="/">Home</a> | <a href="/read-me.html">Read Me</a> | <a href="mailto:info@childev-cradle.org">Contact Us</a></p>
-        <p style="margin-top: 10px;">&copy; 2024 Little Global Champ Child Development Academy. All rights reserved.</p>
-    </div>
-</footer>
+<footer class="footer"><div class="container"><p>ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. | SEC Reg. No. SEC260516-TR5ARDEFZWCHELE (Under Review)</p><p><a href="index.html">Home</a> | <a href="read-me.html">Read Me</a> | <a href="payment.html">Pay Online</a></p></div></footer>
 
-<script>
-    // Smooth scroll and form handling
-    document.querySelector('form')?.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Thank you for your interest! Our team will contact you within 24 hours to schedule an assessment and tour.');
-        this.reset();
-    });
-</script>
+<script>document.getElementById('enrollForm')?.addEventListener('submit', function(e) { e.preventDefault(); alert('Thank you for your interest! Our team will contact you within 24 hours to schedule an assessment and tour.'); this.reset(); });</script>
 </body>
 </html>
