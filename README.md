@@ -1,9 +1,9 @@
 READ ME
 Little Global Champ Child Development Academy
-Operated by: ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. (General Partnership)
+Operated by: ACHIE EARLY CHILD DEVELOPMENT CRADLE CO. 
 A Registered Child Development Center as per Republic Act No. 12199
 WHO WE ARE
-Little Global Champ Child Development Academy is a SEC-registered General Partnership that operates a Child Development Center (CDC) serving children aged 2 to 5 years, including those with special needs. We are the only preschool in DMCI estates that explicitly teaches confidence, integrity, GMRC, life skills, and safety drills as core curriculum pillars.
+Little Global Champ Child Development Academy is a SEC-registered that operates a Child Development Center (CDC) serving children aged 2 to 5 years, including and particularly those children with special needs. We are the only preschool in DMCI Estates that explicitly teaches confidence, integrity, GMRC, life skills, and safety drills as core curriculum pillars.
 
 Legal Name	ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.
 Trade Name	Little Global Champ Child Development Academy
@@ -35,10 +35,10 @@ OUR 8 PILLARS
 7	Integrity Development	Truth-telling, promise-keeping
 8	Safety & Emergency	Turtle Pose, Firefighter Crawl, Hide & Hush, Safety Selfie
 OUR GENERAL PARTNERS
-Partner	Role	TIN
-Marjorie LuzCel Arenas Bautista (Teacher Clarice)	Managing Partner / Treasurer	236-234-744-000
-Clarence Mercillo Morales	President	214-660-768-000
-The Partnership has posted a surety bond of ₱1,000,000.00 for the Treasurer as required by SEC Memorandum Circular No. 7, Series of 2019.
+Partner	Role	
+Marjorie E. Arenas  (Teacher Achie)	Managing Partner / Treasurer	
+Clarence M. Morales	(Kuyang Enzo) Business Development Partner
+The Partnership has posted a surety bond for the Treasurer as required by SEC Memorandum Circular No. 7, Series of 2019.
 
 OUR LEGAL AUTHORITY
 Under our Articles of Partnership (submitted to SEC, currently under review), we are expressly authorized to:
@@ -72,7 +72,7 @@ As a General Partnership, we operate with full transparency:
 
 What We Disclose	Where
 Articles of Partnership	Available for inspection at our principal office
-Partner identities and TINs	This page
+Partner identities This page
 Surety bond details	This page
 SEC registration status	This page (Under Review)
 Financial statements	Annually to SEC and upon request
@@ -88,7 +88,6 @@ BIR	Tax Registration	To be applied
 LGU Taguig	Mayor's Permit	To be applied
 BFP	Fire Safety Certificate	To be applied
 OUR LOCATIONS
-Type	Address
 Headquarters	1206 Trade and Finance Tower, 7th Avenue corner 32nd Street, Fort Bonifacio, BGC, Taguig City
 Classrooms	DMCI Estates: Acacia Estates (Taguig), Sheridan (Mandaluyong), Tree Park (Parañaque), Princeton (Cainta), Creek Side (Pasig), and more coming soon
 CONTACT & VERIFICATION
@@ -100,7 +99,7 @@ Partnership Inspection	By appointment at our BGC headquarters
 FINAL WORD
 Little Global Champ Child Development Academy exists because every child deserves to feel confident, tell the truth, keep promises, and know how to stay safe. We are a General Partnership registered with the SEC, fully authorized to receive donations and sponsorships, and committed to inclusive education under Philippine law.
 
-— Teacher Clarice
+— Teacher Achie
 Managing Partner, ACHIE EARLY CHILD DEVELOPMENT CRADLE CO.
 
 *This "Read Me" page was last updated on [Date]. SEC Registration No. SEC260516-TR5ARDEFZWCHELE (Under Review).*
